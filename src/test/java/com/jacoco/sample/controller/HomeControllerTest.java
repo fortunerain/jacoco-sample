@@ -20,6 +20,7 @@ public class HomeControllerTest {
   @LocalServerPort
   private int port;
 
+
   @Test
   public void home() {
     String result = testRestTemplate.getForObject("/home", String.class);
